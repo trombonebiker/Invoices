@@ -1,0 +1,9 @@
+<p id="notice"><%= notice %></p>
+
+<h1><%= @company.name %></h1>
+<p>Address<br><%= @company.address %></p>
+<p>Phone: <%= @company.phone %></p>
+<p>Invoices Email: <%= @company.invoices_email %></p>
+<%= link_to 'Delete', company_path(@company), method: :delete %> |
+<%= link_to 'Edit', edit_company_path(@company) %> |
+<%= link_to 'Back', companies_path %>
